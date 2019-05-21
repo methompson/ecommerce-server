@@ -35,10 +35,19 @@ const Customer = sequelize.define('customer', {
         type: Sequelize.STRING,
         allowNull: false,
     },
-    currency: {type: Sequelize.STRING,},
-    homePhone: {type: Sequelize.STRING,},
-    mobilePhone: {type: Sequelize.STRING,},
-    workPhone: {type: Sequelize.STRING,}
+    currency: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    homePhone: {
+        type: Sequelize.STRING,
+    },
+    mobilePhone: {
+        type: Sequelize.STRING,
+    },
+    workPhone: {
+        type: Sequelize.STRING,
+    }
 } );
 
 module.exports = Customer;
